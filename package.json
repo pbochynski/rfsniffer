@@ -1,0 +1,22 @@
+{
+  "name": "rfsniffer",
+  "version": "1.0.0",
+  "description": "Raspberry PI RF Sniffer",
+  "main": "rfsniffer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbochynski/rfsniffer.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pbochynski/rfsniffer/issues"
+  },
+  "homepage": "https://github.com/pbochynski/rfsniffer#readme",
+  "dependencies": {
+    "rpi-gpio": "^0.7.0"
+  }
+}
