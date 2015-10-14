@@ -11,4 +11,4 @@ function readTemp() {
 	});
 }
 
-setInterval(5000,readTemp);
+setInterval(readTemp,5000);
