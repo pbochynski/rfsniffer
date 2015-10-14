@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pbochynski/rfsniffer#readme",
   "dependencies": {
+    "ds18b20": "0.0.2",
     "rpi-gpio": "^0.7.0"
   }
 }
