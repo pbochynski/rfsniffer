@@ -16,9 +16,10 @@ function codesend(code) {
 		console.log('stdout: ' + stdout);
 		console.log('stderr: ' + stderr);
 		if (error !== null) {
-			console.log('exec error: ' + error);
+			console.error('exec error: ' + error);
 		}
 	});
 }
 
-heatOn();
+exports.on = heatOn;
+exports.off = heatOff;

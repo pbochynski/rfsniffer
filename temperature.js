@@ -1,14 +1,20 @@
 var ds18b20 = require('ds18b20');
 
+
 ds18b20.sensors(function(err, ids) {
-	console.log(ids);
+	ids.forEach(function (id){
+			console.log(id);
+			setInterval(function(){
+				readTemp(id);
+			}, 5000);
+		}
+	);
 });
 
-// ...
-function readTemp() {
-	ds18b20.temperature('28-031467bacdff', function (err, value) {
-		console.log('Current temperature is', value);
+function readTemp(id) {
+	ds18b20.temperature(id, function (err, value) {
+		console.log(id+': ', value);
+
 	});
 }
 
-setInterval(readTemp,5000);
