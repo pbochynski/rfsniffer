@@ -28,11 +28,11 @@ function readTemp(id) {
 function regulator() {
 	ds18b20.temperature(ROOM, function (err, value) {
 		if (err) return;
-		if (value > 21.7) {
+		if (value > 22.0) {
 			heat.off();
 			console.log(getDate()+': Heat Off');
 		}
-		if (value < 21.5) {
+		if (value < 20.0) {
 			heat.on();
 			console.log(getDate()+': Heat On');
 		}
